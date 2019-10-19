@@ -7,14 +7,15 @@ int main() {
   string S;
   ll K;
   cin >> S >> K;
-  cout << S << K;
-  // ll i = 0;
-  // char c = S[i];
-  // int num = c - '0';
-  // while (K-pow(num,5*pow(10,12)) >= 0) {
-  //   K -= pow(num,5*pow(10,12));
-  //   i++;
-  // }
-  // cout << num << endl;
+  ll i = 0;
+  int num;
+  while (K) {
+    char c = S[i];
+    num = c - '0';
+    K -= pow(num,5*pow(10,12));
+    if (K < 0) break;
+    i++;
+  }
+  cout << num << endl;
   return 0;
 }
