@@ -15,6 +15,11 @@
     "regex": "cpp",
     "utility": "cpp",
     "valarray": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "functional": "cpp",
+    "chrono": "cpp",
+    "*.tcc": "cpp",
+    "list": "cpp",
+    "string": "cpp"
   }
 }
